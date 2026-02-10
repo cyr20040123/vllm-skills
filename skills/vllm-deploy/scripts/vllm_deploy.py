@@ -94,13 +94,7 @@ class DeploymentResult:
     endpoint_url: Optional[str] = None
     instance_id: Optional[str] = None
     message: str = ""
-    metadata: Dict[str, Any] = None
-
-    def __post_init__(self):
-        if self.metadata is None:
-            self.metadata = {}
-
-
+    metadata: Dict[str, Any] = field(default_factory=dict)
 class VLLMDeployer:
     """Main class for deploying vLLM online services.
 
