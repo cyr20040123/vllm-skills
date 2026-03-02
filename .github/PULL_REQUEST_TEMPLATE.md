@@ -27,9 +27,17 @@
 **Test environment:**
 - OS:
 - Architecture (x86_64 / ARM64 / ...):
-- Hardware (e.g. NVIDIA A100 80GB / Ascend 910B2 / ...):
+- Hardware (e.g. NVIDIA A100 80GB / AMD MI300 / ...):
 - Agent + LLM (e.g., Claude Code + Sonnet 4.5):
 - vLLM version (if applicable):
+
+### Test Plan
+
+<!-- Describe the exact steps/prompts used to test the skill(s). -->
+
+### Test Results
+
+<!-- Summarize outcomes and include representative agent output or logs if applicable. -->
 
 ## Skill Checklist
 
