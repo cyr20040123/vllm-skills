@@ -8,18 +8,14 @@ This repository provides modular, reusable agent skills required to operate and 
 
 All skills adhere to the Anthropics skills template and can be copied into a Claude Code skills directory for use.
 
-## Project Structure
+## Skills Index
 
-```
-vllm-skills/
-├── skills/
-│   ├── vllm-deploy-simple/   # Local deployment skill
-│   │   ├── SKILL.md          # Skill documentation (YAML frontmatter + body)
-│   │   └── scripts/          # Deployment utilities
-│   └── vllm-deploy-docker/   # Docker deployment skill
-│       └── SKILL.md          # Skill documentation (YAML frontmatter + body)
-└── README.md
-```
+| Skill | Description |
+|-------|-------------|
+| [vllm-deploy-docker](skills/vllm-deploy-docker/) | Deploy vLLM using Docker (pre-built images or build-from-source) with NVIDIA GPU support and run the OpenAI-compatible server. |
+| [vllm-deploy-simple](skills/vllm-deploy-simple/) | Quick install and deploy vLLM, start serving with a simple LLM, and test OpenAI API. |
+| [vllm-prefix-cache-bench](skills/vllm-prefix-cache-bench/) | Benchmark the efficiency of vLLM automatic prefix caching using fixed prompts, real datasets, or synthetic prefix/suffix patterns. |
+
 
 ## Skills Example
 
